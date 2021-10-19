@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 1px solid violet;
+      }
+      /* 표의 홀수번째 열에 배경색 넣기 */
+      table tr:nth-child(odd) {
+        background-color: blueviolet;
+        color: white;
+      }
+      /* 부모안에서 p가 몇번째인지 괄호안에 실제 위치 입력! */
+      ul > p:nth-child(2) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>블루베리</td>
+      </tr>
+      <tr>
+        <td>귀리</td>
+      </tr>
+      <tr>
+        <td>토마토</td>
+      </tr>
+      <tr>
+        <td>시금치</td>
+      </tr>
+      <tr>
+        <td>적포도주</td>
+      </tr>
+      <tr>
+        <td>견과류</td>
+      </tr>
+      <tr>
+        <td>연어</td>
+      </tr>
+      <tr>
+        <td>마늘</td>
+      </tr>
+    </table>
+    <ul>
+      <div>딸기</div>
+      <p>사과</p>
+      <p>오렌지</p>
+      <span>망고</span>
+    </ul>
+  </body>
+</html>
