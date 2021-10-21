@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
       .child1 {
         width: 100px;
         height: 100px;
@@ -19,16 +25,22 @@
         width: 200px;
         height: 200px;
         background-color: violet;
-        float: right;
+        /* clear: left; */
       }
     </style>
   </head>
   <body>
-    <div class="parent1">
+    <div class="parent1 clearfix">
       <div class="child1">1</div>
       <div class="child1">2</div>
       <div class="child1">3</div>
-      <div class="box">4</div>
     </div>
+    <div class="box">4</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, eos
+      sapiente. Suscipit, debitis in dignissimos exercitationem voluptatem
+      recusandae consequatur veniam nihil tempora cum ab ipsum, repudiandae
+      veritatis aliquid, dolorum quae.
+    </p>
   </body>
 </html>
